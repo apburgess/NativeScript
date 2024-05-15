@@ -141,7 +141,7 @@ export function getAncestor(view: ViewBaseDefinition, criterion: string | { new 
  * @param id - The id of the view to look for.
  * Returns an instance of a view (if found), otherwise undefined.
  */
-export function getViewById(view: ViewBaseDefinition, id: string): ViewBaseDefinition {
+export function getViewById(view: ViewBaseDefinition, id: string): ViewBaseDefinition | undefined {
 	if (!view) {
 		return undefined;
 	}
